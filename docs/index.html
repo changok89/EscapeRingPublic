@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EscapeRing Pages</title>
-  <meta name="description" content="EscapeRing(탈출링) 공식 페이지 모음">
+  <meta name="description" content="EscapeRing official pages for marketing, privacy policy, and support.">
   <style>
     :root {
       --bg1: #10243f;
@@ -13,18 +13,17 @@
       --text: #17212b;
       --muted: #5d6b79;
       --line: #dce5ee;
-      --accent: #0a84ff;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Hiragino Sans", sans-serif;
       color: var(--text);
       background: linear-gradient(135deg, var(--bg1), var(--bg2));
       min-height: 100vh;
     }
     .wrap {
-      max-width: 860px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 36px 18px 46px;
     }
@@ -42,6 +41,14 @@
     }
     p { margin: 10px 0; line-height: 1.6; }
     .muted { color: var(--muted); }
+    .lang {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #f8fbff;
+    }
+    .lang p { margin: 6px 0; }
     .list {
       margin: 18px 0 0;
       padding: 0;
@@ -62,6 +69,7 @@
       border-color: #bad6ff;
       background: #f4f9ff;
     }
+    .label { font-weight: 700; }
     .url {
       margin-top: 16px;
       padding: 10px 12px;
@@ -77,16 +85,36 @@
   <main class="wrap">
     <section class="card">
       <h1>탈출링 (EscapeRing)</h1>
-      <p>스토어 등록용 공식 페이지입니다. 아래 링크를 각 항목에 사용하세요.</p>
+
+      <div class="lang">
+        <p><strong>KR</strong> 스토어 등록 및 심사 제출에 사용할 공식 페이지입니다.</p>
+        <p><strong>EN</strong> Official pages for store listing and review submission.</p>
+        <p><strong>JA</strong> ストア登録・審査提出に使用する公式ページです。</p>
+      </div>
 
       <ul class="list">
-        <li><a href="./marketing.html"><strong>Marketing URL</strong><br><span class="muted">앱 소개 및 주요 기능</span></a></li>
-        <li><a href="./privacy-policy.html"><strong>Privacy Policy URL</strong><br><span class="muted">개인정보처리방침</span></a></li>
-        <li><a href="./support-url.html"><strong>Support URL</strong><br><span class="muted">문의 및 고객지원</span></a></li>
+        <li>
+          <a href="./marketing.html">
+            <span class="label">Marketing URL</span><br>
+            <span class="muted">KR: 앱 소개 및 주요 기능 / EN: App overview and key features / JA: アプリ紹介と主要機能</span>
+          </a>
+        </li>
+        <li>
+          <a href="./privacy-policy.html">
+            <span class="label">Privacy Policy URL</span><br>
+            <span class="muted">KR: 개인정보처리방침 / EN: Privacy Policy / JA: プライバシーポリシー</span>
+          </a>
+        </li>
+        <li>
+          <a href="./support-url.html">
+            <span class="label">Support URL</span><br>
+            <span class="muted">KR: 문의 및 고객지원 / EN: Contact and support / JA: お問い合わせとサポート</span>
+          </a>
+        </li>
       </ul>
 
       <div class="url">https://changok89.github.io/EscapeRingPublic/</div>
-      <p class="muted">마지막 업데이트: 2026-02-23</p>
+      <p class="muted">Last updated / 最終更新 / 마지막 업데이트: 2026-02-23</p>
     </section>
   </main>
 </body>

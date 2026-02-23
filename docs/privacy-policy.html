@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EscapeRing Privacy Policy</title>
-  <meta name="description" content="EscapeRing(탈출링) 개인정보처리방침">
+  <meta name="description" content="EscapeRing privacy policy in Korean, English, and Japanese.">
   <style>
     :root {
       --bg: #f5f6f8;
@@ -17,13 +17,13 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Hiragino Sans", sans-serif;
       color: var(--text);
       background: radial-gradient(circle at 10% 10%, #f0fbf8 0%, #f5f6f8 45%);
       line-height: 1.65;
     }
     .wrap {
-      max-width: 920px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 26px 18px 48px;
     }
@@ -35,9 +35,10 @@
       margin-bottom: 14px;
       box-shadow: 0 8px 24px rgba(0,0,0,.04);
     }
-    h1, h2 { margin: 0 0 10px; line-height: 1.25; }
+    h1, h2, h3 { margin: 0 0 10px; line-height: 1.25; }
     h1 { font-size: 1.75rem; }
-    h2 { font-size: 1.1rem; margin-top: 12px; }
+    h2 { font-size: 1.1rem; margin-top: 10px; }
+    h3 { font-size: 1.05rem; margin-top: 14px; }
     p { margin: 8px 0; }
     ul { margin: 8px 0 0 18px; padding: 0; }
     a { color: var(--accent); text-decoration: none; }
@@ -52,79 +53,189 @@
       font-size: .92rem;
       background: #fff;
     }
+    .lang-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .lang-nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 11px;
+      color: var(--text);
+      background: #fff;
+      font-size: .9rem;
+    }
+    .lang-block {
+      border: 1px dashed #cfe0d8;
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 12px;
+      background: #fcfefd;
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="card">
-      <h1>개인정보처리방침</h1>
-      <p>탈출링(EscapeRing, 이하 "앱")은 이용자의 개인정보를 소중하게 생각하며, 관련 법령을 준수합니다. 본 방침은 앱 이용 시 처리되는 정보와 그 목적을 설명합니다.</p>
-      <div class="nav">
-        <a class="chip" href="./support-url.html">지원 센터</a>
-        <a class="chip" href="./marketing.html">앱 소개</a>
+      <h1>Privacy Policy / 개인정보처리방침 / プライバシーポリシー</h1>
+      <div class="lang-nav">
+        <a href="#ko">한국어</a>
+        <a href="#en">English</a>
+        <a href="#ja">日本語</a>
+      </div>
+      <div class="nav" style="margin-top:14px;">
+        <a class="chip" href="./support-url.html">Support</a>
+        <a class="chip" href="./marketing.html">Marketing</a>
+        <a class="chip" href="./index.html">Index</a>
       </div>
     </section>
 
-    <section class="card">
-      <h2>1. 수집하는 정보</h2>
-      <ul>
-        <li>이용자가 직접 입력한 시나리오(이름, 번호, 대화 문장)</li>
-        <li>이용자가 녹음한 음성 파일</li>
-        <li>앱 사용 중 생성되는 로그/충돌 정보(안정성 개선 목적)</li>
-        <li>광고 제공 및 성과 측정을 위한 식별 정보(광고 SDK를 통해 처리될 수 있음)</li>
-      </ul>
-    </section>
+    <section class="card" id="ko">
+      <h2>한국어</h2>
+      <p>탈출링(EscapeRing, 이하 "앱")은 이용자의 개인정보를 중요하게 생각합니다. 본 방침은 앱 사용 시 처리되는 정보와 처리 목적을 설명합니다.</p>
 
-    <section class="card">
-      <h2>2. 정보 이용 목적</h2>
-      <ul>
-        <li>가짜전화 시뮬레이션 기능 제공 및 사용자 설정 유지</li>
-        <li>알림 예약 및 재생 기능 제공</li>
-        <li>서비스 품질 개선, 오류 분석, 비정상 동작 대응</li>
-        <li>광고 노출 및 서비스 운영 재원 확보</li>
-      </ul>
-    </section>
+      <div class="lang-block">
+        <h3>1. 수집하는 정보</h3>
+        <ul>
+          <li>이용자가 직접 입력한 시나리오 정보(이름, 번호, 문장)</li>
+          <li>이용자가 녹음한 음성 파일</li>
+          <li>오류 분석 및 안정성 개선을 위한 로그/충돌 정보</li>
+          <li>광고 제공 및 성과 측정을 위한 정보(광고 SDK를 통해 처리될 수 있음)</li>
+        </ul>
 
-    <section class="card">
-      <h2>3. 권한 사용 안내</h2>
-      <ul>
-        <li>알림 권한: 예약된 호출 시점 안내</li>
-        <li>마이크 권한: 음성 녹음 기능</li>
-        <li>동작/센서 권한(선택): 흔들기 즉시 호출 트리거 기능</li>
-      </ul>
-      <p>각 권한은 기능 제공을 위해서만 사용되며, 이용자는 기기 설정에서 언제든 권한을 변경할 수 있습니다.</p>
-    </section>
+        <h3>2. 이용 목적</h3>
+        <ul>
+          <li>가짜전화 시뮬레이션 기능 제공</li>
+          <li>예약 호출 및 알림 기능 제공</li>
+          <li>서비스 품질 개선, 오류 대응, 운영 안정성 확보</li>
+          <li>광고 노출 및 서비스 운영 재원 마련</li>
+        </ul>
 
-    <section class="card">
-      <h2>4. 제3자 제공 및 처리 위탁</h2>
-      <p>앱은 분석, 오류 추적, 광고 제공을 위해 외부 서비스 제공자 SDK를 사용할 수 있습니다. 이 과정에서 일부 정보가 해당 제공자의 정책에 따라 처리될 수 있습니다.</p>
-      <ul>
-        <li>분석/안정성: 서비스 품질 및 충돌 분석</li>
-        <li>광고: 배너/전면 광고 제공 및 성과 측정</li>
-      </ul>
-    </section>
+        <h3>3. 권한 사용</h3>
+        <ul>
+          <li>알림 권한: 예약 호출 알림</li>
+          <li>마이크 권한: 음성 녹음 기능</li>
+          <li>동작/센서 권한(선택): 흔들기 실행 기능</li>
+        </ul>
 
-    <section class="card">
-      <h2>5. 보관 및 삭제</h2>
-      <p>이용자가 입력/녹음한 데이터는 기본적으로 이용자 기기에 저장됩니다. 앱 삭제 시 기기 내 저장 데이터는 함께 삭제될 수 있습니다. 관련 법령에 따라 별도 보관이 필요한 정보가 있는 경우 해당 기간 동안 보관 후 지체 없이 파기합니다.</p>
-    </section>
+        <h3>4. 제3자 서비스</h3>
+        <p>앱은 분석, 안정성, 광고 제공을 위해 외부 서비스 제공자 SDK를 사용할 수 있으며, 이 과정에서 일부 정보가 해당 제공자 정책에 따라 처리될 수 있습니다.</p>
 
-    <section class="card">
-      <h2>6. 이용자 권리</h2>
-      <p>이용자는 언제든 데이터 삭제, 권한 철회, 문의 요청을 할 수 있습니다. 아래 연락처로 요청해 주세요.</p>
+        <h3>5. 보관 및 삭제</h3>
+        <p>사용자 입력 및 녹음 데이터는 기본적으로 이용자 기기에 저장됩니다. 앱 삭제 시 데이터도 함께 삭제될 수 있습니다. 법령상 보관이 필요한 경우 해당 기간 보관 후 파기합니다.</p>
+
+        <h3>6. 이용자 권리</h3>
+        <p>이용자는 데이터 삭제 요청, 권한 철회, 문의를 언제든 할 수 있습니다.</p>
+
+        <h3>7. 아동 개인정보</h3>
+        <p>앱은 관련 법령에 따른 아동 개인정보 보호 기준을 준수합니다.</p>
+
+        <h3>8. 방침 변경</h3>
+        <p>법령 또는 서비스 변경 시 본 방침은 업데이트될 수 있으며, 변경 내용은 본 페이지에 고지됩니다.</p>
+      </div>
+
       <p><strong>문의:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
     </section>
 
-    <section class="card">
-      <h2>7. 아동의 개인정보</h2>
-      <p>앱은 법령상 아동의 개인정보 보호 기준을 준수합니다. 보호자 요청 시 관련 문의에 신속히 대응합니다.</p>
+    <section class="card" id="en">
+      <h2>English</h2>
+      <p>EscapeRing ("the App") values user privacy. This policy explains what information may be processed and why.</p>
+
+      <div class="lang-block">
+        <h3>1. Information We Collect</h3>
+        <ul>
+          <li>Scenario data entered by users (name, number, script text)</li>
+          <li>Voice recordings created by users</li>
+          <li>Logs and crash data for reliability and error analysis</li>
+          <li>Information for advertising and performance measurement (may be handled by ad SDKs)</li>
+        </ul>
+
+        <h3>2. How We Use Information</h3>
+        <ul>
+          <li>Provide fake-call simulation features</li>
+          <li>Provide scheduled call and notification features</li>
+          <li>Improve service quality and operational stability</li>
+          <li>Display ads and support free service operation</li>
+        </ul>
+
+        <h3>3. Permissions</h3>
+        <ul>
+          <li>Notifications: scheduled call alerts</li>
+          <li>Microphone: voice recording features</li>
+          <li>Motion/Sensor (optional): shake-to-trigger feature</li>
+        </ul>
+
+        <h3>4. Third-Party Services</h3>
+        <p>The App may use third-party SDKs for analytics, stability, and advertising. Some data may be processed under those providers' policies.</p>
+
+        <h3>5. Retention and Deletion</h3>
+        <p>User-entered and recorded data is generally stored on the user's device. Deleting the app may remove stored data. If legal retention is required, data is retained for that period and then deleted.</p>
+
+        <h3>6. User Rights</h3>
+        <p>Users may request data deletion, revoke permissions, and contact support at any time.</p>
+
+        <h3>7. Children's Privacy</h3>
+        <p>The App follows applicable legal requirements for children's privacy.</p>
+
+        <h3>8. Policy Changes</h3>
+        <p>This policy may be updated when laws or services change. Updates will be posted on this page.</p>
+      </div>
+
+      <p><strong>Contact:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
+    </section>
+
+    <section class="card" id="ja">
+      <h2>日本語</h2>
+      <p>EscapeRing（以下「本アプリ」）は利用者のプライバシーを重視します。本ポリシーでは、処理される情報とその目的を説明します。</p>
+
+      <div class="lang-block">
+        <h3>1. 取得する情報</h3>
+        <ul>
+          <li>利用者が入力したシナリオ情報（名前、番号、文面）</li>
+          <li>利用者が録音した音声ファイル</li>
+          <li>安定性向上と不具合分析のためのログ・クラッシュ情報</li>
+          <li>広告配信と効果測定のための情報（広告 SDK を通じて処理される場合があります）</li>
+        </ul>
+
+        <h3>2. 利用目的</h3>
+        <ul>
+          <li>疑似着信シミュレーション機能の提供</li>
+          <li>予約実行と通知機能の提供</li>
+          <li>品質改善、障害対応、運用安定化</li>
+          <li>広告表示および無料提供の継続</li>
+        </ul>
+
+        <h3>3. 権限の利用</h3>
+        <ul>
+          <li>通知権限: 予約実行の通知</li>
+          <li>マイク権限: 録音機能</li>
+          <li>モーション/センサー権限（任意）: 振って起動する機能</li>
+        </ul>
+
+        <h3>4. 第三者サービス</h3>
+        <p>本アプリは分析、安定性向上、広告提供のために第三者 SDK を利用する場合があります。この過程で一部情報が提供者のポリシーに従って処理されることがあります。</p>
+
+        <h3>5. 保管と削除</h3>
+        <p>入力データや録音データは基本的に利用者の端末に保存されます。アプリ削除により保存データが削除される場合があります。法令上保管が必要な情報は、必要期間保管後に削除します。</p>
+
+        <h3>6. 利用者の権利</h3>
+        <p>利用者はデータ削除依頼、権限撤回、お問い合わせをいつでも行えます。</p>
+
+        <h3>7. 子どものプライバシー</h3>
+        <p>本アプリは、適用法令に基づく子どものプライバシー保護基準を遵守します。</p>
+
+        <h3>8. ポリシー変更</h3>
+        <p>法令やサービス内容の変更に伴い、本ポリシーは更新される場合があります。変更内容は本ページで告知します。</p>
+      </div>
+
+      <p><strong>連絡先:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
     </section>
 
     <section class="card">
-      <h2>8. 방침 변경</h2>
-      <p>본 방침은 서비스 변경 또는 법령 개정에 따라 업데이트될 수 있으며, 변경 시 본 페이지를 통해 고지합니다.</p>
-      <p class="muted">시행일: 2026-02-23</p>
-      <p class="muted">최종 수정일: 2026-02-23</p>
+      <p class="muted">Effective date / 施行日 / 시행일: 2026-02-23</p>
+      <p class="muted">Last updated / 最終更新 / 최종 수정일: 2026-02-23</p>
     </section>
   </main>
 </body>

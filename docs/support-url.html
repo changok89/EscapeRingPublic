@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EscapeRing Support</title>
-  <meta name="description" content="EscapeRing(탈출링) 지원 페이지">
+  <meta name="description" content="EscapeRing support page in Korean, English, and Japanese.">
   <style>
     :root {
       --bg: #f7f4ef;
@@ -17,13 +17,13 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Hiragino Sans", sans-serif;
       color: var(--text);
       background: linear-gradient(145deg, #f7f4ef 0%, #eceff5 100%);
       line-height: 1.6;
     }
     .wrap {
-      max-width: 880px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 28px 18px 48px;
     }
@@ -38,6 +38,7 @@
     h1, h2 { margin: 0 0 10px; line-height: 1.25; }
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.15rem; margin-top: 12px; }
+    h3 { margin: 0 0 8px; font-size: 1.02rem; }
     p { margin: 8px 0; }
     ul { margin: 8px 0 0 18px; padding: 0; }
     a { color: var(--accent); text-decoration: none; }
@@ -52,41 +53,117 @@
       font-size: 0.92rem;
       background: #fff;
     }
+    .lang-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .lang-nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 11px;
+      color: var(--text);
+      background: #fff;
+      font-size: .9rem;
+    }
+    .lang-block {
+      border: 1px dashed #d3dbe6;
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 12px;
+      background: #fcfdff;
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="card">
-      <h1>탈출링 (EscapeRing) 지원 센터</h1>
-      <p>탈출링은 가짜전화 시뮬레이션 기능을 제공하는 엔터테인먼트 앱입니다. 사용 중 문의, 오류 제보, 기능 제안이 있다면 아래 채널로 연락해 주세요.</p>
+      <h1>EscapeRing Support</h1>
+      <p class="muted">KR / EN / JA</p>
+      <div class="lang-nav">
+        <a href="#ko">한국어</a>
+        <a href="#en">English</a>
+        <a href="#ja">日本語</a>
+      </div>
+      <div class="nav" style="margin-top:14px;">
+        <a class="chip" href="./privacy-policy.html">Privacy Policy</a>
+        <a class="chip" href="./marketing.html">Marketing</a>
+        <a class="chip" href="./index.html">Index</a>
+      </div>
+    </section>
+
+    <section class="card" id="ko">
+      <h2>한국어</h2>
+      <p>탈출링은 가짜전화 시뮬레이션 기능을 제공하는 엔터테인먼트 앱입니다. 사용 중 문의, 오류 제보, 기능 제안은 아래 이메일로 보내주세요.</p>
       <p><strong>연락처:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
       <p class="muted">평균 응답 시간: 영업일 기준 1~3일</p>
-      <div class="nav">
-        <a class="chip" href="./privacy-policy.html">개인정보처리방침</a>
-        <a class="chip" href="./marketing.html">앱 소개</a>
+
+      <div class="lang-block">
+        <h3>문의 시 함께 보내주시면 좋은 정보</h3>
+        <ul>
+          <li>앱 버전</li>
+          <li>기기 모델 및 운영체제 버전</li>
+          <li>문제 발생 시간과 재현 방법</li>
+          <li>오류 화면 캡처(가능한 경우)</li>
+        </ul>
+      </div>
+
+      <div class="lang-block">
+        <h3>자주 묻는 질문</h3>
+        <p><strong>Q.</strong> 실제 전화가 걸리나요?<br><strong>A.</strong> 아닙니다. 실제 통신 기능이 없는 시뮬레이터입니다.</p>
+        <p><strong>Q.</strong> 타이머가 울리지 않아요.<br><strong>A.</strong> 알림 권한, 무음 모드, 집중 모드를 확인해 주세요.</p>
+      </div>
+    </section>
+
+    <section class="card" id="en">
+      <h2>English</h2>
+      <p>EscapeRing is an entertainment app that simulates incoming calls. For support, bug reports, or feature requests, contact us by email below.</p>
+      <p><strong>Contact:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
+      <p class="muted">Typical response time: 1-3 business days</p>
+
+      <div class="lang-block">
+        <h3>Helpful details to include</h3>
+        <ul>
+          <li>App version</li>
+          <li>Device model and OS version</li>
+          <li>Time of issue and reproduction steps</li>
+          <li>Screenshots (if available)</li>
+        </ul>
+      </div>
+
+      <div class="lang-block">
+        <h3>FAQ</h3>
+        <p><strong>Q.</strong> Does this place real calls?<br><strong>A.</strong> No. It is a simulator and does not provide real telecommunication.</p>
+        <p><strong>Q.</strong> My timer did not trigger.<br><strong>A.</strong> Check notification permission, silent mode, and focus/do-not-disturb settings.</p>
+      </div>
+    </section>
+
+    <section class="card" id="ja">
+      <h2>日本語</h2>
+      <p>EscapeRing は着信を演出するシミュレーションアプリです。お問い合わせ、不具合報告、機能要望は以下のメールへご連絡ください。</p>
+      <p><strong>連絡先:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
+      <p class="muted">通常の返信目安: 1-3 営業日</p>
+
+      <div class="lang-block">
+        <h3>お問い合わせ時にあると助かる情報</h3>
+        <ul>
+          <li>アプリのバージョン</li>
+          <li>端末モデルと OS バージョン</li>
+          <li>発生時刻と再現手順</li>
+          <li>画面キャプチャ（可能な場合）</li>
+        </ul>
+      </div>
+
+      <div class="lang-block">
+        <h3>よくある質問</h3>
+        <p><strong>Q.</strong> 実際に電話がかかりますか？<br><strong>A.</strong> いいえ。実通信機能を持たないシミュレーターです。</p>
+        <p><strong>Q.</strong> タイマーが作動しません。<br><strong>A.</strong> 通知許可、サイレントモード、集中モード設定をご確認ください。</p>
       </div>
     </section>
 
     <section class="card">
-      <h2>문의 시 함께 보내주시면 좋은 정보</h2>
-      <ul>
-        <li>앱 버전</li>
-        <li>기기 모델 및 운영체제 버전</li>
-        <li>문제가 발생한 시각과 재현 방법</li>
-        <li>오류 화면 캡처(가능한 경우)</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>자주 묻는 질문</h2>
-      <p><strong>Q. 실제 전화가 걸리나요?</strong><br>A. 아닙니다. 이 앱은 실제 통신 기능이 없는 시뮬레이터입니다.</p>
-      <p><strong>Q. 타이머가 울리지 않아요.</strong><br>A. 알림 권한, 무음 모드, 방해 금지/집중 모드 상태를 먼저 확인해 주세요.</p>
-      <p><strong>Q. 녹음이 되지 않아요.</strong><br>A. 마이크 권한이 허용되어 있는지 확인해 주세요.</p>
-      <p><strong>Q. 음성/광고 로딩이 느려요.</strong><br>A. 네트워크 상태가 불안정하면 일부 기능 반응이 지연될 수 있습니다.</p>
-    </section>
-
-    <section class="card">
-      <p class="muted">마지막 업데이트: 2026-02-23</p>
+      <p class="muted">Last updated / 最終更新 / 마지막 업데이트: 2026-02-23</p>
     </section>
   </main>
 </body>
