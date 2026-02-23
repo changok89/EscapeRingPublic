@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EscapeRing Support</title>
+  <meta name="description" content="EscapeRing(탈출링) 지원 페이지">
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: #ffffff;
+      --text: #1f2328;
+      --muted: #5f6b7a;
+      --line: #e2e6eb;
+      --accent: #1864ab;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      color: var(--text);
+      background: linear-gradient(145deg, #f7f4ef 0%, #eceff5 100%);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.05);
+    }
+    h1, h2 { margin: 0 0 10px; line-height: 1.25; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.15rem; margin-top: 12px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color: var(--muted); }
+    .nav { display: flex; gap: 12px; flex-wrap: wrap; }
+    .chip {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.92rem;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>탈출링 (EscapeRing) 지원 센터</h1>
+      <p>탈출링은 가짜전화 시뮬레이션 기능을 제공하는 엔터테인먼트 앱입니다. 사용 중 문의, 오류 제보, 기능 제안이 있다면 아래 채널로 연락해 주세요.</p>
+      <p><strong>연락처:</strong> <a href="mailto:judasiscariot055@gmail.com">judasiscariot055@gmail.com</a></p>
+      <p class="muted">평균 응답 시간: 영업일 기준 1~3일</p>
+      <div class="nav">
+        <a class="chip" href="./privacy-policy.html">개인정보처리방침</a>
+        <a class="chip" href="./marketing.html">앱 소개</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>문의 시 함께 보내주시면 좋은 정보</h2>
+      <ul>
+        <li>앱 버전</li>
+        <li>기기 모델 및 운영체제 버전</li>
+        <li>문제가 발생한 시각과 재현 방법</li>
+        <li>오류 화면 캡처(가능한 경우)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>자주 묻는 질문</h2>
+      <p><strong>Q. 실제 전화가 걸리나요?</strong><br>A. 아닙니다. 이 앱은 실제 통신 기능이 없는 시뮬레이터입니다.</p>
+      <p><strong>Q. 타이머가 울리지 않아요.</strong><br>A. 알림 권한, 무음 모드, 방해 금지/집중 모드 상태를 먼저 확인해 주세요.</p>
+      <p><strong>Q. 녹음이 되지 않아요.</strong><br>A. 마이크 권한이 허용되어 있는지 확인해 주세요.</p>
+      <p><strong>Q. 음성/광고 로딩이 느려요.</strong><br>A. 네트워크 상태가 불안정하면 일부 기능 반응이 지연될 수 있습니다.</p>
+    </section>
+
+    <section class="card">
+      <p class="muted">마지막 업데이트: 2026-02-23</p>
+    </section>
+  </main>
+</body>
+</html>
